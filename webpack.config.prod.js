@@ -23,9 +23,8 @@ module.exports = {
         ]
     },
     output: {
-        path: path.resolve(__dirname, "www", "build"),
-        publicPath: "build",
-        filename: "[name].bundle.js"
+        path: path.resolve(__dirname, "www"),
+        filename: "build/[name].bundle.js"
     },
     resolve: {
         modulesDirectories: ["app", "node_modules"],
