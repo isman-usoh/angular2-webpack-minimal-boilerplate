@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "angular2 webpack typescript minimal boilerplate",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.js",
+    "dev": "webpack && webpack-dev-server --config webpack.config.js",
     "build": "npm run clean && webpack -p --config webpack.config.prod.js",
     "clean": "rimraf www/build www/index.html",
     "postinstall": "typings install"
