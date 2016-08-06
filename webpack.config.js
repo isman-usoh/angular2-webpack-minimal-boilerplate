@@ -52,7 +52,8 @@ module.exports = {
             { test: /\.html$/, loader: "html" },
             { test: /\.css$/, exclude: root("app"), loader:"style!css?sourceMap" },
             { test: /\.css$/, include: root("app"), loader: "raw" },
-            { test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/, loader: "file?name=assets/[name].[hash].[ext]" }
+            { test: /\.(png|jpe?g|gif|svg|ico)$/, loader: "file?name=/assets/images/[name]-[[hash:4]].[ext]?v=[version]" },
+            { test: /\.(woff|woff2|ttf|eot)$/, loader: "file?name=/assets/fonts/[name]-[hash:4].[ext]?v=[version]" }
         ],
         preLoaders: [
             { test: /\.tsx?$/, loader: "tslint" }
@@ -60,5 +61,8 @@ module.exports = {
     },
     ts: {
 
+    },
+    fileLoader: {
+        version: "1.0"
     }
 };
