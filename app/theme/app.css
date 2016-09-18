@@ -1,4 +1,8 @@
 
-main h1{
-    color: red;
+
+main {
+    background-color: #fff;
+    min-height: 600px;
+    padding: 1em;
+    margin-top: 1em;
 }

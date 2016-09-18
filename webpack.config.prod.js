@@ -16,10 +16,10 @@ module.exports = {
     context: path.resolve(__dirname, "app"),
     entry: {
         app: [
-            "reflect-metadata",
-            "zone.js",
             "core-js",
-            "./app"
+            "zone.js",
+            "reflect-metadata",
+            "./main"
         ]
     },
     output: {
